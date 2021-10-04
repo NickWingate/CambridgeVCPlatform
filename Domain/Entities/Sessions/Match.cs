@@ -10,6 +10,7 @@
 			set => IsHomeGame = !value;
 		}
 
-		
+		public string OpponentTeam { get; set; }
+		public Squad SquadPlaying { get; set; }
 	}
 }
