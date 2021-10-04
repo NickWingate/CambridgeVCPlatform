@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <Folder Include="Common" />
+      <Folder Include="Enums" />
     </ItemGroup>
 
 </Project>
