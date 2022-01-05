@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             x:Class="XamarinUi.Resources.Sessions.View1">
+    <ContentView.Content>
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame HasShadow="True" Grid.Row="1" Grid.Column="1" >
+                <Button Height="100" WidthRequest="300" 
+                           HorizontalOptions="StartAndExpand"
+                           Grid.ColumnSpan="3"
+                           CornerRadius="10">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#3590F3" Offset="0"/>
+                            <GradientStop Color="#C2BBF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+
+                </Button>
+            </Frame>
+            <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+
+                <Label Text="Session Name" Grid.Row="1" Grid.Column="1" FontSize="20"
+                   FontAttributes="Bold"/>
+                <Label Text="13:45" />
+                <Label Text="Test" />
+                <Label Text="13:45"/>
+            </StackLayout>
+            
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>
