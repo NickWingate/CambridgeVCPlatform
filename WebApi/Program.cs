@@ -1,8 +1,13 @@
+using Microsoft.EntityFrameworkCore;
 using Serilog;
+using WebApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var connString = builder.Configuration.GetConnectionString("CVCPlatformAppDbConnection");
+builder.Services.AddDbContext<CVCPlatformDbContext>(options => options.UseSqlServer(connString));
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
