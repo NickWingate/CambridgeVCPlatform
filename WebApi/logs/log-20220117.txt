@@ -1,0 +1,17 @@
+2022-01-17 13:43:02.087 +00:00 [INF] Now listening on: https://localhost:7044
+2022-01-17 13:43:02.152 +00:00 [INF] Now listening on: http://localhost:5044
+2022-01-17 13:43:02.159 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-17 13:43:02.172 +00:00 [INF] Hosting environment: Development
+2022-01-17 13:43:02.179 +00:00 [INF] Content root path: D:\Programming\C#\CambridgeVCPlatform\WebApi\
+2022-01-17 13:43:18.138 +00:00 [INF] test log message
+2022-01-17 13:53:08.688 +00:00 [INF] Now listening on: https://localhost:7044
+2022-01-17 13:53:08.743 +00:00 [INF] Now listening on: http://localhost:5044
+2022-01-17 13:53:08.750 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-17 13:53:08.752 +00:00 [INF] Hosting environment: Development
+2022-01-17 13:53:08.753 +00:00 [INF] Content root path: D:\Programming\C#\CambridgeVCPlatform\WebApi\
+2022-01-17 13:55:34.268 +00:00 [INF] Application is shutting down...
+2022-01-17 14:25:53.487 +00:00 [INF] Now listening on: https://localhost:7044
+2022-01-17 14:25:53.544 +00:00 [INF] Now listening on: http://localhost:5044
+2022-01-17 14:25:53.554 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-17 14:25:53.556 +00:00 [INF] Hosting environment: Development
+2022-01-17 14:25:53.557 +00:00 [INF] Content root path: D:\Programming\C#\CambridgeVCPlatform\WebApi\

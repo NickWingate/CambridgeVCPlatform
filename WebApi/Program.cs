@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using WebApi.Configurations;
 using WebApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connString = builder.Configuration.GetConnectionString("CVCPlatformAppDbConnection");
 builder.Services.AddDbContext<CVCPlatformDbContext>(options => options.UseSqlServer(connString));
 
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
