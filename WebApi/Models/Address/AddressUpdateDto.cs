@@ -4,6 +4,7 @@ namespace WebApi.Models.Address
 {
     public class AddressUpdateDto
     {
+        [Required]
         public int Id { get; set; }
 
         [Required]

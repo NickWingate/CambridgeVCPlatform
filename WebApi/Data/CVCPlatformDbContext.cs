@@ -71,8 +71,6 @@ namespace WebApi.Data
 
             modelBuilder.Entity<TrainingSession>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.Property(e => e.Name).HasMaxLength(500);
 
                 entity.Property(e => e.Price).HasColumnType("money");

@@ -9,14 +9,14 @@ namespace WebApi.Data
         public decimal? Price { get; set; }
         public bool? IsTryoutSession { get; set; }
         public int? Capacity { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; }
         public int? SessionTimingId { get; set; }
         public int? AddressId { get; set; }
         public int? SquadId { get; set; }
-        public string? Description { get; set; }
+        public string Description { get; set; }
 
-        public virtual Address? Address { get; set; }
-        public virtual SessionTiming? SessionTiming { get; set; }
-        public virtual Squad? Squad { get; set; }
+        public virtual Address Address { get; set; }
+        public virtual SessionTiming SessionTiming { get; set; }
+        public virtual Squad Squad { get; set; }
     }
 }
