@@ -12,21 +12,13 @@ using WebApi.Models.Address;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AddressesController : ControllerBase
+    public class AddressesController : ApiControllerBase<AddressesController>
     {
-        private readonly CVCPlatformDbContext _context;
-        private readonly IMapper _mapper;
-        private readonly ILogger<AddressesController> _logger;
-
-        public AddressesController(CVCPlatformDbContext context, 
-            IMapper mapper, 
-            ILogger<AddressesController> logger)
+        public AddressesController(
+            CVCPlatformDbContext context,
+            IMapper mapper,
+            ILogger<AddressesController> logger) : base(context, mapper, logger)
         {
-            _context = context;
-            _mapper = mapper;
-            _logger = logger;
         }
 
         // GET: api/Addresses
@@ -145,17 +137,6 @@ namespace WebApi.Controllers
         private async Task<bool> AddressExists(int id)
         {
             return await _context.Addresses.AnyAsync(e => e.Id == id);
-        }
-
-        /// <summary>
-        /// Log exception and alert client
-        /// </summary>
-        /// <param name="ex"></param>
-        /// <returns></returns>
-        private ActionResult HandleException(Exception ex, string functionName)
-        {
-            _logger.LogError(ex, $"Error in {functionName}");
-            return StatusCode(500, "Error completing your requests. Please try again later");
         }
     }
 }

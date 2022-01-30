@@ -6,3 +6,4 @@ riderModule.iml
 /.vs/
 /.idea/.idea.CVCPlatform/.idea
 /CVCPlatform.sln.DotSettings.user
+/WebApi/logs
